@@ -1,0 +1,37 @@
+{
+  "name": "minter",
+  "version": "1.0.0",
+  "description": "App to mint NFTs",
+  "main": "index.js",
+  "dependencies": {
+    "@bull-board/express": "^3.10.4",
+    "axios": "^0.27.2",
+    "bull": "^4.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.4",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:queue": "node src/jobs/queue.js",
+    "db:drop": "npx sequelize-cli db:drop",
+    "db:create": "npx sequelize-cli db:create",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed": "npx sequelize-cli db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://selvamramasamy@bitbucket.org/dev_guardian/minter.git"
+  },
+  "author": "GuardianLink",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dev_guardian/minter#readme"
+}
